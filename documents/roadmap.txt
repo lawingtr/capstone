@@ -1,0 +1,25 @@
+This roadmap contains different sections that need to be completed, and sub-sections detailing 
+potential goals for each 2-week period.
+
+1. Initailization and study
+    Set up GitHub repository, and make sure commits/pulls work as intended
+    Create specifications, changelog, and roadmap
+    Plan/implement empty website framework
+    Connect database system to empty website framework, and make sure it works as intended
+
+2. Bare-bones implementation and testing
+    Add the ability to create/manage an account
+    Add the ability to create/manage multiple databases from an account
+
+3. Complete implementation and testing
+    Create different database forms based on the user's selected sport
+    Add the ability to manipulate data using any number of advanced analytics
+    Add the ability to allow the user to create & use custom analytics
+    Add the ability to export databases to Excel/Google Sheets
+
+4. Aesthetic Components
+    CSS/anything else visually related
+
+Note that these sections and sub-sections aren't meant to be allotted specific amounts of time each.  Some will take 
+much longer than others, as I have more experience with some areas(website framework, database linking) than other 
+areas(anything CSS or visually related, as it pertains to HTML).
