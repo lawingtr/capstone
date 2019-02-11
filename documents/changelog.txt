@@ -3,7 +3,15 @@ Spring 2019
 CS 4800
 Thomas Lawing
 
-2/11/19 - Initial post-test commit
+2/11/19 - Initial post-test session
 		- Initialized GitHub repository
 		- Created specifications.txt
 		- Created changelog.txt
+		- Created roadmap.txt
+		- Created README.mp
+		- Created holder html files for "index", "newDatabase", "myAccount",
+		"login", "createAccount", and "contact"
+		- Created "exapmle.html", which uses "style.css", a file from a
+		database project last semester
+		- Created two sub-directories, "documents" and "web_framework", and
+		moved all files into their proper locations
