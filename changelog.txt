@@ -1,0 +1,8 @@
+Change Log
+Spring 2019
+CS 4800
+Thomas Lawing
+
+2/11/19 - Initialized github repository
+		- Created specifications.txt
+		- Created changelog.txt

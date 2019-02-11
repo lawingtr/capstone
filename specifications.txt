@@ -1,0 +1,18 @@
+OSDH Project
+Spring 2019
+CS 4800
+Thomas Lawing
+
+
+The project, in its simplest form, is an online hosting platform for any number of sports databases.  The databases
+are personalized to the sport that the user selects, and are easy to populate/manipulate.  Anyone should be able to
+use this tool, including someone who has minimal experience with databases of any sort.
+
+Ideally, the project will include a profile system that allows each user to personally manage their own databases 
+at any time, from any location, so long as they have access to the website.  The intended use is personalized data 
+tracking and manipulation for everyone, including fans, players, and coaches.  The tool is also intended to expose 
+the uses of advanced data metrics(analytics) to the average sports fan/competitor, in hopes that they will recognize 
+the uses of these metrics, and apply them to their own datasets.
+
+For information regarding the project progress, view "changelog.txt".
+To contact the author directly, feel free to message on GitHub or email at lawingtr@appstate.edu.
