@@ -15,3 +15,12 @@ Thomas Lawing
 		database project last semester
 		- Created two sub-directories, "documents" and "web_framework", and
 		moved all files into their proper locations
+
+2/18/29 - Second session
+		- Created holder html files for "search", "community", and "about"
+		- Set up initial layout for "index.html"
+		- Added navbar and footer to "index.html", with a little CSS
+		- Linked "search.html", "about.html", "newDatabase.html",
+		"community.html", and "account.html" to the navbar on "index.html"
+		- Created "connection.php", the first step to linking a database to
+		the actual website
