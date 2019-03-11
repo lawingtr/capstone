@@ -33,3 +33,11 @@ Thomas Lawing
 		successfully link a blank database and an a 2-column entry(name, team)
 		- Tried adding a third column(position), but nothing is going into the
 		column
+
+3/11/19 - Fourth session - Post Spring Break
+		- Implemented a navbar and footer on all current .html documents
+		- Replaced SearchBar with a "Navigation" tab on the navbar
+		- Cleaned out directories, removing test code and useless files/lines
+		- Implemented a login button and accompanying CSS to "index.html",
+		which will be subsequentally placed properly and paired with a sign up
+		button, then pushed to all pages
