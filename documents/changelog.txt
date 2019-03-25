@@ -41,3 +41,12 @@ Thomas Lawing
 		- Implemented a login button and accompanying CSS to "index.html",
 		which will be subsequentally placed properly and paired with a sign up
 		button, then pushed to all pages
+
+3/25/19 - Fifth session - Prior to first real meeting
+		- Finally linked MySQL to my html files
+		- Added registration and login functionality
+		- Added several .php files to allow for creation of accounts within my
+		SQL database hosted by the university
+		- These .php files also hash passwords, check for unique usernames,
+		throw errors if login credentials don't exist, and link to a button on
+		the "index.html" page
