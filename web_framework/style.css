@@ -41,7 +41,7 @@ body {
 /* Stylize the Fixed Footer */
 .footer {
   position: fixed;
-  left: 30;
+  left: 0;
   bottom: 0;
   width: 100%;
   background-color: #4CAF50;
@@ -59,20 +59,50 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Styles for the login button*/
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    right: 10px;
+
+.btn-c a {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  position: absolute;
+  top: 5px;
+  right: 100px;
 }
-button:hover {
-    opacity: 0.8;
+.btn-b a {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+/* Formatting for the top-right account name */
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
 </style>
