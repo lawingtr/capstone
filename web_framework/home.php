@@ -1,3 +1,16 @@
+<?php 
+  session_start(); 
+
+  if (!isset($_SESSION['username'])) {
+  	$_SESSION['msg'] = "You must log in first";
+  	header('location: login.php');
+  }
+  if (isset($_GET['logout'])) {
+  	session_destroy();
+  	unset($_SESSION['username']);
+  	header("location: index.html");
+  }
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -6,32 +19,38 @@
 
 
 <html>
-<head>
 
+<head>
 <h1>EZ Sports</h1>
 <h5>Sports data tracking; made easy</h5>
-
-<title>EZ Sports - Home</title>
+<title>EZ Sports - Account</title>
 <link rel="stylesheet" href="style.css" />
-
 </head>
-<body>
 
+<body>
 <div class = "topnav">
-    <a class = "active" href = "index.html">Home</a>
-    <a href = "about.html">About</a>
-    <a href = "newDatabase.html">New</a>
-    <a href = "account.html">Account</a>
-    <a href = "help.html">Help</a>
+    <a class = "active" href = "home.php">Home</a>
+    <a href = "about.php">About</a>
+    <a href = "newDatabase.php">New</a>
+    <a href = "success.php">Account</a>
+    <a href = "help.php">Help</a>
     <div class="topnav-right">
-	<a href="navigate.html">Navigate</a>
+	<a href="navigate.php">Navigate</a>
     </div>
 </div>
-<div class = "btn-c">
-    <a href="register.php">Register</a>
-</div>
-<div class = "btn-b">
-    <a href="login.php">Login</a>
+<div class="content">
+  	<!-- notification message -->
+  	<?php if (isset($_SESSION['success'])) : ?>
+      <div class="error success" >
+      	<h3>
+          <?php 
+          	echo $_SESSION['success']; 
+          	unset($_SESSION['success']);
+          ?>
+      	</h3>
+      </div>
+  	<?php endif ?>
+    <!-- logged in user information -->
 </div>
 
 <br>
@@ -80,9 +99,8 @@
     </p>
     <h2>Where do I begin?</h2>
     <p>Begin by creating an account using the "Register" button at the top-right of your page.  If you 
-	already have an account, log in and use the "New" tab to create a database using one of 
-	our pre-existing templates.  If you find yourself getting lost, feel free to click on either of  
-	the "Help" or "Navigate" tabs, as they both contain more information on the website.</p>
+	already have an account, log in and use the "New" tab to either create a database using one of 
+	our pre-existing templates.</p>
 </div>
 
 <script>
@@ -106,5 +124,16 @@ function showSlides() {
   setTimeout(showSlides, 8000); // Change image every 2 seconds
 }
 </script>
-</body>   
+
+
+</body>
+
+<div class = "topright">
+      <?php  if (isset($_SESSION['username'])) : ?>
+	<p><strong><?php echo $_SESSION['username']; ?></strong>
+	   <a href="index.html" style="color: red;">logout</a> 
+	</p>
+    <?php endif ?>
+</div>   
+
 </html>
